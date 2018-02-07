@@ -13,14 +13,14 @@ import {
 export default class teleport extends React.Component {
   constructor() {
     super();
-    this.state = {selectedState: "Arizona"};
+    this.state = {selectedState: "Vancouver"};
   }
 
   stateClicked (selection) {
     let newState;
     switch(selection) {
       case 1:
-        newState = "Arizona";
+        newState = "Vancouver";
         break;
       case 2:
         newState = "New Hampshire";
@@ -30,10 +30,7 @@ export default class teleport extends React.Component {
         break;
       case 4:
         newState = "Hawaii";
-        break;
-      case 5:
-        newState = "Vancouver";
-        break;
+        break;      
     }
     console.log(newState);
     this.setState({ selectedState: newState});
@@ -41,11 +38,10 @@ export default class teleport extends React.Component {
 
   render() {
     const states = {
-      Arizona: "Arizona",
+      Vancouver: "Vancouver",
       NewHampshire: "New Hampshire",
       Space: "Space",
-      Hawaii: "Hawaii",
-      Vancouver: "Vancouver"
+      Hawaii: "Hawaii"      
    }
     
    console.log(this.state.selectedState);
@@ -141,7 +137,7 @@ class TextBoxes extends React.Component {
       <View>
         <VrButton onClick={() => this.props.stateClicked(1)}>
           <View style={{ margin: 0.1, height: 0.3, borderRadius:0.1, backgroundColor: '#3bcfbd'}}>
-            <Text style={{fontSize: 0.2, textAlign: 'center'}}>{this.props.states.Arizona}</Text>
+            <Text style={{fontSize: 0.2, textAlign: 'center'}}>{this.props.states.Vancouver}</Text>
           </View>
         </VrButton>
         <VrButton onClick={() => this.props.stateClicked(2)}>
@@ -159,11 +155,7 @@ class TextBoxes extends React.Component {
             <Text style={{fontSize: 0.2, textAlign: 'center'}}>{this.props.states.Hawaii}</Text>
           </View>
         </VrButton>
-        <VrButton onClick={() => this.props.stateClicked(5)}>
-          <View style={{ margin: 0.1, height: 0.3, borderRadius:0.1, backgroundColor: '#3bcfbd'}}>
-            <Text style={{fontSize: 0.2, textAlign: 'center'}}>{this.props.states.Vancouver}</Text>
-          </View>
-        </VrButton>
+        
       </View>
     )
   }
