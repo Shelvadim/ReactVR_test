@@ -1,5 +1,4 @@
 # ReactVR_test
-Playing with ReactVR
 
-Teleport application:
-https://shelgachev.neocities.org/reactvr/index.html
+ReactVR animation example
+https://shelvadim.github.io/bootstrapsite/reactvr/animation/index.html
