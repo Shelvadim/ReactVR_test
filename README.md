@@ -5,4 +5,4 @@ Teleport application:
 https://shelvadim.github.io/bootstrapsite/teleport/index.html
 
 ReactVR animation example
-https://shelvadim.github.io/bootstrapsite/ReactVR/animation/index.html
+https://shelvadim.github.io/bootstrapsite/animation/index.html
